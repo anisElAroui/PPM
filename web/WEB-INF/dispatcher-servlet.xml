@@ -21,6 +21,7 @@
             <props>
                 <prop key="index.htm">indexController</prop>
                 <prop key="home.htm">homeController</prop>
+                <prop key="add.htm">addController</prop>
             </props>
         </property>
     </bean>
@@ -33,7 +34,7 @@
    
     
     <bean name="homeController" class="com.me.controller.HomeController" />
-    
+    <bean name="addController" class="com.me.controller.AddController" />
     <bean name="indexController"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="index" />
