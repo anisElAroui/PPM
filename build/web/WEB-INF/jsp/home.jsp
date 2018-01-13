@@ -47,7 +47,7 @@
     </div>
         
     <section id="envoyer">
-       <div class="container" style="padding-top: 50px">
+       <div class="container" style="padding-top: 50px;padding-bottom: 50px;">
             
             <h2>Envoyer un colis</h2><br>
             
@@ -76,8 +76,8 @@
                                 <td><c:out value="${b.poids}"/></td>
                                 <td><c:out value="${b.mp}"/></td>
                                 <td>
-                                    <a href="<c:url value="editc.htm?id=${d.id}"/>" ><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
-                                    <a href="<c:url value="deletec.htm?id=${d.id}"/>" ><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                                    <a href="<c:url value="editc.htm?id=${b.id}"/>" ><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
+                                    <a href="<c:url value="deletec.htm?id=${b.id}"/>" ><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
                                 </td>
                             </tr>
                         </c:forEach>
@@ -138,9 +138,9 @@
         
         
     <section id="acheter">    
-        <div class="container" style="padding-top: 50px">
+        <div class="container" style="padding-top: 50px;padding-bottom: 50px;">
             
-            <h2>Commander un colis</h2><br>
+            <h2>Commander un colis</h2>
             
             <div class="row">
                 <p>
