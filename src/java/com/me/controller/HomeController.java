@@ -35,6 +35,10 @@ public class HomeController {
         List data = this.jdbcTempalte.queryForList(sql);
         mav.addObject("data", data);
         
+        String sql2 = "select * from c";
+        List data2 = this.jdbcTempalte.queryForList(sql2);
+        mav.addObject("data2", data2);
+        
         mav.setViewName("home");
         
         return mav ;

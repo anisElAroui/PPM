@@ -69,7 +69,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <c:forEach items="${data}" var="b">
+                        <c:forEach items="${data2}" var="b">
                             <tr>
                                 <td><c:out value="${b.id}"/></td>
                                 <td><c:out value="${b.nom}"/></td>
