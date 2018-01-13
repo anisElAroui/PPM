@@ -8,7 +8,7 @@
         <title>ajout colis</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
-    <body>
+    <body style='background:url(images/3.jpg) '>
         <div class="container">
             <ol class="breadcrumb">
                 <li><a href="<c:url value="/home.htm" />">Liste des colis</a></li>

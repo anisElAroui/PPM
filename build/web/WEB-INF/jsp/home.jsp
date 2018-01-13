@@ -48,34 +48,43 @@
         
     <section id="envoyer">
        <div class="container" style="padding-top: 50px">
-           <h2>Envoyer un colis</h2><br>
-           <div class="panel panel-primary" >
-                <div class="panel-heading">Saisir les données</div>
-                <div class="panel-body">
-                   
-                        <form:form method="post" commandName="colis">
-                            
-                            <form:errors path="*" element="div" cssClass="alert alert-danger" />
-                            
-                            <p>
-                                <form:label path="nom">Nom :</form:label>
-                                <form:input path="nom" cssClass="form-control" />
-                                
-                            </p>
-                            
-                            <p>
-                                <form:label path="quantite">Quantité :</form:label>
-                                <form:input path="quantite" cssClass="form-control" />
-                            </p>
-                            
-                            <p>
-                                <form:label path="lien">Lien :</form:label>
-                                <form:input path="lien" cssClass="form-control" />
-                            </p>
-                            <hr />
-                            <input type="submit" value="Ajouter" class="btn btn-danger" />
-                        </form:form>
-                </div>
+          <div class="container" style="padding-top: 50px">
+            
+            <h2>Envoyer un colis</h2><br>
+            
+            <div class="row">
+                <p>
+                    <a href="<c:url value="addc.htm"/>" class="btn btn-success" style="margin-left: 20px;margin-top: 10px"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Envoyer un colis</a>                    
+                </p>
+                <br>
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th> Id </th>
+                            <th> Nom </th>
+                            <th> Destination </th>
+                            <th> Poids </th>
+                            <th> Mode de paiment </th>
+                            <th> Action </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <c:forEach items="${data}" var="b">
+                            <tr>
+                                <td><c:out value="${b.id}"/></td>
+                                <td><c:out value="${b.nom}"/></td>
+                                <td><c:out value="${b.destination}"/></td>
+                                <td><c:out value="${b.poids}"/></td>
+                                <td><c:out value="${b.mp}"/></td>
+                                <td>
+                                    <a href="<c:url value="editc.htm?id=${d.id}"/>" ><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
+                                    <a href="<c:url value="deletec.htm?id=${d.id}"/>" ><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                                </td>
+                            </tr>
+                        </c:forEach>
+                                                
+                    </tbody>
+                </table>             
             </div>
         </div>
     </section>
