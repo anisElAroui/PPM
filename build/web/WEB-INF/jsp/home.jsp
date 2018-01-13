@@ -48,7 +48,6 @@
         
     <section id="envoyer">
        <div class="container" style="padding-top: 50px">
-          <div class="container" style="padding-top: 50px">
             
             <h2>Envoyer un colis</h2><br>
             
@@ -64,7 +63,7 @@
                             <th> Nom </th>
                             <th> Destination </th>
                             <th> Poids </th>
-                            <th> Mode de paiment </th>
+                            <th> Mode de paiement </th>
                             <th> Action </th>
                         </tr>
                     </thead>
